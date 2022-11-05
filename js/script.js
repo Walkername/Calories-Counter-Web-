@@ -79,7 +79,8 @@ resetButton.addEventListener('reset', () => {
     resultWindow.classList.add('counter__result--hidden');
 });
 
-computationButton.addEventListener('click', () => {
+computationButton.addEventListener('click', (evt) => {
+    evt.preventDefault();
     const number = sexMale.checked ? 5 : -161;
     const result = Math.ceil((weightMain(inputHeight.value, inputWeight.value, inputAge.value) + number) * coefftActivity);
     resultWindow.classList.remove('counter__result--hidden');
