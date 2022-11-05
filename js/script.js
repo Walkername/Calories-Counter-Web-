@@ -76,6 +76,7 @@ resetButton.addEventListener('reset', () => {
     switcherActivity.querySelector('#activity-medium').removeAttribute('checked', 'true');
     switcherActivity.querySelector('#activity-high').removeAttribute('checked', 'true');
     switcherActivity.querySelector('#activity-maximal').removeAttribute('checked', 'true');
+    resultWindow.classList.add('counter__result--hidden');
 });
 
 computationButton.addEventListener('click', () => {
